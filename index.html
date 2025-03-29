@@ -25,6 +25,22 @@
       .latoFont {
         font-family: "Lato", sans-serif;
       }
+      .categoryBtn {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+        border-width: 1px;
+        padding: 1rem 2.5rem;
+        border-radius: 0.75rem;
+        border-color: #e3e6e6;
+      }
+      .categoryBtn:hover {
+        border-color: #0e7a81;
+        background-color: #d3f3f5;
+        border-radius: 9999px;
+      }
     </style>
   </head>
   <body class="latoFont w-10/12 mx-auto">
@@ -137,7 +153,10 @@
         </div>
 
         <!-- pets category name here -->
-        <div id="petsCategoryName"></div>
+        <div
+          id="categoryNameContainer"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3"
+        ></div>
       </section>
     </main>
     <script src="index.js"></script>
